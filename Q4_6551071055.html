@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 4 - User Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f9f9f9;
+    }
+    form {
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 8px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    .radio-group, .checkbox-group {
+      margin-top: 5px;
+    }
+    .radio-group label, .checkbox-group label {
+      font-weight: normal;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 15px;
+      background: #4CAF50;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Information Form</h2>
+
+  <form action="" method="get">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label>Age:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="age" value="<18" required> &lt;18</label>
+      <label><input type="radio" name="age" value="19-35"> 19-35</label>
+      <label><input type="radio" name="age" value="36-48"> 36-48</label>
+      <label><input type="radio" name="age" value=">49"> &gt;49</label>
+    </div>
+
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" name="profession" required>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">--Select your country--</option>
+      <option value="Vietnam">Vietnam</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Japan">Japan</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="interests">Interests:</label>
+    <select id="interests" name="interests" multiple size="4">
+      <option value="Sports">Sports</option>
+      <option value="Music">Music</option>
+      <option value="Travel">Travel</option>
+      <option value="Reading">Reading</option>
+      <option value="Technology">Technology</option>
+    </select>
+
+    <label for="found">How did you find out about the site?</label>
+    <textarea id="found" name="found" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

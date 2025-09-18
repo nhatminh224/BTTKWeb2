@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home page</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      display: inline-block;
+      font-size: 24px;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    nav {
+      background: #f2f2f2;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: blue;
+    }
+
+    main {
+      flex: 1; 
+      display: flex;
+      justify-content: center; 
+      align-items: flex-start;    
+      gap: 0;
+      padding: 20px 0;
+    }
+
+    section {
+      width: 250px;
+      padding: 0 20px;
+      text-align: center; 
+      box-sizing: border-box;
+    }
+
+    
+    section:first-child {
+      border-right: 2px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      background: #f9f9f9;
+    }
+
+    footer a {
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/50" alt="Logo">
+    <h1>University name</h1>
+  </header>
+
+  <nav>
+    <a href="#">Presentation</a>
+    <a href="#">Studies</a>
+    <a href="#">Staff</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>News</h2>
+      <p><strong>News 1 – Date</strong><br>Description</p>
+      <p><strong>News 2 – Date</strong><br>Description</p>
+    </section>
+
+    <section>
+      <h2>Announcements</h2>
+      <p><strong>Open course 1</strong><br>Description</p>
+      <p><strong>Open course 2</strong><br>Description</p>
+    </section>
+  </main>
+
+  <footer>
+    Contact: <a href="mailto:info@university.com">info@university.com</a><br>
+    (c) University, 2011
+  </footer>
+
+</body>
+</html>
