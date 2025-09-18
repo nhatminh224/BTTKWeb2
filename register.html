@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f6f6f6; }
+        .container { width: 420px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+        nav a { margin: 0 15px; text-decoration: none; color: #0077cc; font-weight: bold; }
+        nav { margin-bottom: 25px; text-align: center; }
+        label { display: block; margin-top: 12px; font-weight: bold; }
+        input[type="text"], select, textarea { width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box; }
+        .radio-group, .checkbox-group { margin-top: 4px; }
+        .radio-group label, .checkbox-group label { font-weight: normal; margin-right: 16px; }
+        button { margin-top: 18px; padding: 8px 18px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="Q5_6551071080.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <h2>Registration Form</h2>
+        <form method="get" action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Age:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="age" value="<18" required> &lt;18</label>
+                <label><input type="radio" name="age" value="19-35"> 19-35</label>
+                <label><input type="radio" name="age" value="36-48"> 36-48</label>
+                <label><input type="radio" name="age" value=">49"> &gt;49</label>
+            </div>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="USA">USA</option>
+                <option value="France">France</option>
+                <option value="Japan">Japan</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interests" value="Sports"> Sports</label>
+                <label><input type="checkbox" name="interests" value="Music"> Music</label>
+                <label><input type="checkbox" name="interests" value="Travel"> Travel</label>
+                <label><input type="checkbox" name="interests" value="Reading"> Reading</label>
+                <label><input type="checkbox" name="interests" value="Gaming"> Gaming</label>
+            </div>
+
+            <label for="found">How did you find out about the site?</label>
+            <textarea id="found" name="found" rows="3" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
